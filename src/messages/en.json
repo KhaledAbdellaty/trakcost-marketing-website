@@ -1,0 +1,262 @@
+{
+  "HomePage": {
+    "title": "Modern ERP for Construction & Finance",
+    "subtitle": "Track costs, manage projects, and streamline operations with the leading cloud-native ERP in MENA.",
+    "getStarted": "Start Free Trial",
+    "contactSales": "Contact Sales"
+
+  },
+  "Metadata": {
+    "home": {
+      "title": "TrackCost | Modern ERP for Construction",
+      "pid": "The #1 cloud ERP for construction companies in MENA. Track costs, manage projects, and streamline operations."
+    },
+    "features": {
+      "title": "Features - TrackCost",
+      "desc": "Explore our comprehensive suite of modules: Finance, Operations, Procurement, and HR."
+    },
+    "solutions": {
+      "title": "Solutions - TrackCost",
+      "desc": "Tailored solutions for General Contractors, Real Estate Developers, and Subcontractors."
+    },
+    "pricing": {
+      "title": "Pricing Plans - TrackCost",
+      "desc": "Transparent pricing for construction teams of all sizes. Start your free trial today."
+    },
+    "about": {
+      "title": "About Us - TrackCost",
+      "desc": "We are building the operating system for the construction industry. Meet the team behind TrackCost."
+    },
+    "blog": {
+      "title": "Blog & Insights - TrackCost",
+      "desc": "Expert advice, industry trends, and product updates for construction professionals."
+    },
+    "contact": {
+      "title": "Contact Sales - TrackCost",
+      "desc": "Get in touch with our team to schedule a demo or discuss your enterprise needs."
+    }
+  },
+  "Navigation": {
+    "features": "Features",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "Common": {
+    "copyright": "© 2026 TrackCost. All rights reserved."
+  },
+  "Footer": {
+    "company": "Company",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "newsletter": "Subscribe to our newsletter",
+    "emailPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "links": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "enterprise": "Enterprise",
+      "changelog": "Changelog",
+      "about": "About Us",
+      "careers": "Careers",
+      "blog": "Blog",
+      "contact": "Contact",
+      "terms": "Terms",
+      "privacy": "Privacy"
+    },
+    "description": "The enterprise-grade ERP built for modern construction and finance teams."
+  },
+  "ClientLogos": {
+    "trustedBy": "Trusted by leading construction companies across MENA"
+  },
+  "ProblemSolution": {
+    "label": " The Problem",
+    "title": "Stop Managing Projects with Spreadsheets",
+    "description": "Fragmented data leads to cost overruns and delays. TrackCost unifies your entire operation in one cloud platform.",
+    "problemTitle": "The Old Way",
+    "problemList": {
+      "1": "Disconnected Excel sheets",
+      "2": "Blind spots in cash flow",
+      "3": "Delayed material procurement",
+      "4": "Manual approval chaos"
+    },
+    "solutionTitle": "The TrackCost Way",
+    "solutionList": {
+      "1": "Real-time unified dashboard",
+      "2": "Automated budget tracking",
+      "3": "Smart inventory management",
+      "4": "One-click digital approvals"
+    }
+  },
+  "ProductModules": {
+    "title": "Everything You Need to Build Better",
+    "subtitle": "A complete suite of integrated modules designed for the construction industry.",
+    "finance": {
+      "title": "Finance & Accounting",
+      "desc": "Automated invoicing, expense tracking, and real-time P&L for every project."
+    },
+    "operations": {
+      "title": "Project Operations",
+      "desc": "Track daily progress, labor hours, and site activities in real-time."
+    },
+    "procurement": {
+      "title": "Procurement",
+      "desc": "Streamline POs, RFQs, and vendor management to prevent delays."
+    },
+    "hr": {
+      "title": "HR & Payroll",
+      "desc": "Manage localized payroll, attendance, and compliance for your workforce."
+    }
+  },
+  "HowItWorks": {
+    "title": "Three Steps to Total Control",
+    "subtitle": "Get up and running in days, not months.",
+    "steps": {
+      "1": {
+        "title": "Connect Your Team",
+        "desc": "Invite your engineers, accountants, and project managers to one shared workspace."
+      },
+      "2": {
+        "title": "Import Project Data",
+        "desc": "Upload your BOQ, budget, and inventory lists instantly."
+      },
+      "3": {
+        "title": "Start Tracking",
+        "desc": "Issue POs, record daily progress, and watch your dashboard update in real-time."
+      }
+    }
+  },
+  "FinalCTA": {
+    "title": "Ready to Transform Your Business?",
+    "subtitle": "Join hundreds of construction companies saving 20% on project costs.",
+    "getStarted": "Start Free Trial",
+    "contactSales": "Contact Sales"
+  },
+  "ContactForm": {
+    "title": "Contact Sales",
+    "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+    "trialTitle": "Start Your 14-Day Free Trial",
+    "trialSubtitle": "No credit card required. Full access to all features.",
+    "fields": {
+      "fullName": "Full Name",
+      "email": "Business Email",
+      "phone": "Phone Number",
+      "companyName": "Company Name",
+      "role": "Job Role (Optional)",
+      "message": "Message (Optional)"
+    },
+    "submit": "Send Message",
+    "startTrial": "Start Free Trial",
+    "submitting": "Submitting...",
+    "success": "Message sent! We'll be in touch shortly.",
+    "error": "Something went wrong. Please try again."
+  },
+  "FeaturesPage": {
+    "title": "Everything You Need to Run Your Construction Business",
+    "subtitle": "From the field to the back office, TrackCost keeps everyone in sync.",
+    "finance": {
+      "title": "Smart Finance",
+      "desc": "Real-time cost tracking, automated invoicing, and integration with your bank."
+    },
+    "operations": {
+      "title": "Field Operations",
+      "desc": "Daily logs, punch lists, and labor tracking accessible from mobile devices."
+    },
+    "procurement": {
+      "title": "Procurement",
+      "desc": "Vendor management, RFQs, and purchase orders in one place."
+    },
+    "reporting": {
+      "title": "Advanced Reporting",
+      "desc": "Customizable dashboards and reports to visualize project health."
+    }
+  },
+  "PricingPage": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that's right for your business size.",
+    "monthly": "/month",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "$299",
+        "desc": "For small teams and startups.",
+        "features": {
+          "1": "Up to 5 Projects",
+          "2": "Basic Financial Tracking",
+          "3": "5 Team Members",
+          "4": "Email Support",
+          "5": "Mobile App Access"
+        }
+      },
+      "growth": {
+        "name": "Growth",
+        "price": "$599",
+        "desc": "For growing construction firms.",
+        "features": {
+          "1": "Unlimited Projects",
+          "2": "Advanced Reporting",
+          "3": "20 Team Members",
+          "4": "Priority Support",
+          "5": "Inventory Management"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "desc": "For large-scale operations.",
+        "features": {
+          "1": "Unlimited Everything",
+          "2": "Dedicated Account Manager",
+          "3": "Custom Integrations",
+          "4": "SLA & 24/7 Support",
+          "5": "On-premise Deployment"
+        }
+      }
+    },
+    "cta": "Choose Plan",
+    "contact": "Contact Sales"
+  },
+  "AboutPage": {
+    "title": "We Are Building the Operating System for MENA Construction",
+    "subtitle": "TrackCost was founded by a team of engineers and finance experts who were tired of the chaos.",
+    "mission": {
+      "title": "Our Mission",
+      "desc": "To empower construction companies with the digital tools they need to build faster, cheaper, and better."
+    },
+    "stats": {
+      "customers": "500+ Customers",
+      "projects": "$2B+ Managed",
+      "team": "50+ Team Members"
+    },
+    "team": {
+      "title": "Meet the Team",
+      "subtitle": "A diverse group of passionate individuals committed to your success."
+    }
+  },
+  "SolutionsPage": {
+    "title": "Solutions for Every Construction Stakeholder",
+    "subtitle": "Whether you are a general contractor, developer, or subcontractor, TrackCost adapts to your workflow.",
+    "contractors": {
+      "title": "General Contractors",
+      "desc": "Control costs across multiple sites, manage subcontractors, and ensure projects stay on budget."
+    },
+    "developers": {
+      "title": "Real Estate Developers",
+      "desc": "Gain high-level visibility into project ROI, cash flow, and timeline milestones."
+    },
+    "subcontractors": {
+      "title": "Subcontractors",
+      "desc": "Track labor hours, materials, and change orders to get paid faster and protect your margins."
+    }
+  },
+  "BlogPage": {
+    "title": "Latest Insights & News",
+    "subtitle": "Expert advice on construction management, cost control, and digital transformation.",
+    "readMore": "Read more",
+    "publishedOn": "Published on"
+  }
+}

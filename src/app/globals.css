@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
+@theme {
+  /* Colors */
+  --color-primary-900: #0b1c2d;
+  --color-primary-600: #2563eb;
+
+  --color-secondary-600: #64748b;
+  --color-secondary-50: #f8fafc;
+
+  --color-accent-success: #22c55e;
+  --color-accent-warning: #f59e0b;
+
+  /* Fonts - Mapped to Next.js Font Variables */
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+}
+
+/* Utilities */
+@layer utilities {
+  .rtl-flip {
+    transform: scaleX(-1);
+  }
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #0b1c2d; /* Primary 900 as default text */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
 }

@@ -1,0 +1,10 @@
+Question 2: Proration Calculation Method
+FR-003 requires prorated charges/credits for mid-cycle plan changes, but the calculation method isn't specified. This is critical for financial accuracy and customer expectations.
+Recommended: Option A (Daily proration)
+This is the industry standard for SaaS billing because:
+Most accurate and fair representation of usage
+Matches how Stripe and most payment processors handle proration
+Customers expect daily precision for plan changes
+Prevents disputes over "unfair" partial month calculations
+Option	Description
+A	Daily proration - Calculate charges/credits based on exact number of days used at each plan level (e.g., 15 days at old rate, 15 days at new rate for mid-month change)
