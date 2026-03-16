@@ -1,15 +1,17 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import StoreProvider from '@/components/providers/StoreProvider';
-import { GlobalHeader } from '@/components/layout/header/GlobalHeader';
-import { GlobalFooter } from '@/components/layout/footer/GlobalFooter';
-import { inter, outfit, ibmPlexArabic, cairo } from '@/lib/fonts';
+import { inter, jakarta, ibmPlexArabic, cairo } from '@/lib/fonts';
 import "../globals.css";
 import { Metadata } from 'next';
+import { PageTransition } from '@/components/ui/PageTransition';
 
 export const metadata: Metadata = {
   title: "TrackCost - Modern ERP for Construction",
   description: "Track costs, manage projects, and streamline operations.",
+  icons: {
+    icon: '/logo.png?v=1',
+    apple: '/logo.png?v=1',
+  },
 };
 
 export default async function LocaleLayout({
@@ -26,21 +28,20 @@ export default async function LocaleLayout({
   // Choose fonts based on locale
   const fontClassNames = locale === 'ar' 
     ? `${ibmPlexArabic.variable} ${cairo.variable}` // Arabic Primary, Arabic Heading
-    : `${inter.variable} ${outfit.variable}`;       // English Primary, English Heading
+    : `${inter.variable} ${jakarta.variable}`;       // English Primary, English Heading
 
   return (
     <html lang={locale} dir={direction} suppressHydrationWarning>
-      <body className={`${fontClassNames} antialiased min-h-screen flex flex-col bg-secondary-50`} suppressHydrationWarning>
+      <body className={`${fontClassNames} antialiased min-h-screen flex flex-col bg-brand-light text-brand-dark`} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
-          <StoreProvider>
-            <GlobalHeader />
-            <main className="flex-1">
+          <main className="flex-1">
+            {/* <PageTransition> */}
               {children}
-            </main>
-            <GlobalFooter />
-          </StoreProvider>
+            {/* </PageTransition> */}
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
+

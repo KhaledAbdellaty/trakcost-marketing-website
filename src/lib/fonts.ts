@@ -1,4 +1,4 @@
-import { Inter, Outfit, IBM_Plex_Sans_Arabic, Cairo } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans, IBM_Plex_Sans_Arabic, Cairo } from 'next/font/google';
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -6,7 +6,7 @@ export const inter = Inter({
   display: 'swap',
 });
 
-export const outfit = Outfit({
+export const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
   variable: '--font-heading',
   display: 'swap',
@@ -14,8 +14,8 @@ export const outfit = Outfit({
 
 export const ibmPlexArabic = IBM_Plex_Sans_Arabic({
   subsets: ['arabic'],
-  weight: ['300', '400', '500', '700'],
-  variable: '--font-sans', // Reusing the same variable name for convenient switching
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-sans',
   display: 'swap',
 });
 

@@ -1,0 +1,66 @@
+
+> track-cost-web@0.1.0 lint
+> eslint
+
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/.agent/skills/algorithmic-art/templates/generator_template.js
+   53:10  warning  'setup' is defined but never used             @typescript-eslint/no-unused-vars
+   70:10  warning  'draw' is defined but never used              @typescript-eslint/no-unused-vars
+   92:7   warning  'Entity' is defined but never used            @typescript-eslint/no-unused-vars
+  132:10  warning  'hexToRgb' is defined but never used          @typescript-eslint/no-unused-vars
+  141:10  warning  'colorFromPalette' is defined but never used  @typescript-eslint/no-unused-vars
+  146:10  warning  'mapRange' is defined but never used          @typescript-eslint/no-unused-vars
+  150:10  warning  'easeInOutCubic' is defined but never used    @typescript-eslint/no-unused-vars
+  155:10  warning  'wrapAround' is defined but never used        @typescript-eslint/no-unused-vars
+  165:10  warning  'updateParameter' is defined but never used   @typescript-eslint/no-unused-vars
+  171:10  warning  'regenerate' is defined but never used        @typescript-eslint/no-unused-vars
+  183:10  warning  'fadeBackground' is defined but never used    @typescript-eslint/no-unused-vars
+  190:10  warning  'getNoiseValue' is defined but never used     @typescript-eslint/no-unused-vars
+  195:10  warning  'vectorFromAngle' is defined but never used   @typescript-eslint/no-unused-vars
+  203:10  warning  'exportImage' is defined but never used       @typescript-eslint/no-unused-vars
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/.agent/skills/pptx/scripts/html2pptx.js
+   31:7   warning  'sharp' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  122:54  warning  'tmpDir' is defined but never used          @typescript-eslint/no-unused-vars
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/.agent/skills/writing-skills/render-graphs.js
+  16:12  error    A `require()` style import is forbidden         @typescript-eslint/no-require-imports
+  18:7   warning  'puppeteer' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/__tests__/components/marketing/features/FeatureDetail.test.tsx
+  45:11  warning  'container' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/__tests__/components/marketing/hero/Hero.test.tsx
+  14:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/src/app/[locale]/blog/[slug]/page.tsx
+  48:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/src/app/[locale]/blog/page.tsx
+  25:9   warning  'ArrowIcon' is assigned a value but never used                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+  44:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/src/components/layout/footer/GlobalFooter.tsx
+  3:10  warning  'Button' is defined but never used  @typescript-eslint/no-unused-vars
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/src/components/marketing/shared/MarketingButton.tsx
+  42:32  warning  'asChild' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/src/components/marketing/shared/MarketingFooter.tsx
+  4:10  warning  'useTranslations' is defined but never used  @typescript-eslint/no-unused-vars
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/src/components/sections/homepage/ClientLogos.tsx
+  15:86  warning  'index' is defined but never used  @typescript-eslint/no-unused-vars
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/src/components/sections/homepage/FinalCTASection.tsx
+  32:18  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/src/components/sections/homepage/HeroSection.tsx
+  50:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/media/khaled/ECF0050EF004E126/TrackCost-Landing/src/components/sections/homepage/ProductModulesSection.tsx
+   2:50  warning  'ArrowRight' is defined but never used                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+  66:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+✖ 31 problems (1 error, 30 warnings)
+

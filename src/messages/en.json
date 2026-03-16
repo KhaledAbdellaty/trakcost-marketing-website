@@ -1,4 +1,5 @@
 {
+
   "HomePage": {
     "title": "Modern ERP for Construction & Finance",
     "subtitle": "Track costs, manage projects, and streamline operations with the leading cloud-native ERP in MENA.",
@@ -43,7 +44,8 @@
     "about": "About Us",
     "blog": "Blog",
     "contact": "Contact",
-    "login": "Login"
+    "login": "Login",
+    "demo": "Request Demo"
   },
   "Common": {
     "copyright": "© 2026 TrackCost. All rights reserved."
@@ -173,6 +175,11 @@
     "reporting": {
       "title": "Advanced Reporting",
       "desc": "Customizable dashboards and reports to visualize project health."
+    },
+    "benefits": {
+      "1": "Save time with automated workflows and real-time data.",
+      "2": "Reduce costs with accurate forecasting and budget control.",
+      "3": "Eliminate errors with a single source of truth for all operations."
     }
   },
   "PricingPage": {
@@ -220,23 +227,7 @@
     "cta": "Choose Plan",
     "contact": "Contact Sales"
   },
-  "AboutPage": {
-    "title": "We Are Building the Operating System for MENA Construction",
-    "subtitle": "TrackCost was founded by a team of engineers and finance experts who were tired of the chaos.",
-    "mission": {
-      "title": "Our Mission",
-      "desc": "To empower construction companies with the digital tools they need to build faster, cheaper, and better."
-    },
-    "stats": {
-      "customers": "500+ Customers",
-      "projects": "$2B+ Managed",
-      "team": "50+ Team Members"
-    },
-    "team": {
-      "title": "Meet the Team",
-      "subtitle": "A diverse group of passionate individuals committed to your success."
-    }
-  },
+
   "SolutionsPage": {
     "title": "Solutions for Every Construction Stakeholder",
     "subtitle": "Whether you are a general contractor, developer, or subcontractor, TrackCost adapts to your workflow.",
@@ -258,5 +249,710 @@
     "subtitle": "Expert advice on construction management, cost control, and digital transformation.",
     "readMore": "Read more",
     "publishedOn": "Published on"
+  },
+  "marketing": {
+    "nav": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "about": "About Us",
+      "contact": "Contact",
+      "demo": "Book a Demo",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "security": "Security"
+    },
+    "seo": {
+      "home": {
+        "title": "TrakCost | Modern ERP for Construction",
+        "description": "Track costs, manage projects, and streamline operations with the leading cloud-native ERP in MENA.",
+        "keywords": "construction software, ERP, project management, MENA, cost tracking, subcontractor management"
+      },
+      "features": {
+        "title": "Features | TrakCost ERP",
+        "description": "Explore the complete suite of features for construction management and finance.",
+        "keywords": "construction tools, construction ERP features, finance, procurement, operations"
+      },
+      "pricing": {
+        "title": "Pricing | TrakCost ERP",
+        "description": "Transparent pricing for construction teams of all sizes. No hidden fees.",
+        "keywords": "construction ERP pricing, TrakCost pricing, construction software cost"
+      },
+      "about": {
+        "title": "About Us | TrakCost ERP",
+        "description": "Learn about the team building the operating system for the construction industry."
+      },
+      "contact": {
+        "title": "Contact | TrakCost ERP",
+        "description": "Get in touch with the TrakCost team."
+      },
+      "demo": {
+        "title": "Book a Demo | TrakCost ERP",
+        "description": "See TrakCost in action. Schedule a personalized demo today."
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Built for MENA Construction",
+        "title": {
+          "line1": "Construction management",
+          "line2": "meets real accounting."
+        },
+        "subtitle": "The premium cloud-based construction ERP that combines project management with professional double-entry accounting. Purpose-built for the MENA region.",
+        "primaryCta": "Start Your Free Trial",
+        "secondaryCta": "Contact Sales",
+        "trust": {
+          "walkthrough": "30-minute walkthrough",
+          "noCard": "No credit card required",
+          "compliance": "MENA tax compliance built-in"
+        }
+      },
+      "cta": {
+        "title": "Ready to take control of your construction business?",
+        "subtitle": "Join leading MENA construction firms already transforming their operations with TrakCost",
+        "primary": "Start Free Trial",
+        "secondary": "Contact Sales"
+      },
+      "trustBanner": {
+        "label": "Trusted by leading contractors across MENA"
+      },
+      "solution": {
+        "label": "The Complete Solution",
+        "title": "The TrakCost Way",
+        "description": "A centralized source of truth. Real-time dashboards, automated budget tracking, and instant digital approvals.",
+        "cards": {
+          "unified": {
+            "title": "One Platform",
+            "desc": "Single unified system covering all construction and accounting needs, no fragmented tools."
+          },
+          "accounting": {
+            "title": "Double-entry Accounting",
+            "desc": "Full chart of accounts and auto journal entries that most construction PM tools miss."
+          },
+          "tax": {
+            "title": "MENA Tax Compliance",
+            "desc": "Built-in VAT, WHT, retention, and Arabic RTL support designed for the Middle East."
+          }
+        }
+      },
+      "features": {
+        "label": "Powerful Features",
+        "title": "Everything You Need to Build Better",
+        "subtitle": "Everything you need to run your construction business efficiently.",
+        "viewAll": "View all features",
+        "items": {
+          "finance": {
+            "title": "Smart Finance",
+            "desc": "Real-time cost tracking, automated invoicing, and interactive P&L for every single project."
+          },
+          "operations": {
+            "title": "Project Operations",
+            "desc": "Track daily progress, log labor hours, and review punch lists seamlessly from the field."
+          },
+          "procurement": {
+            "title": "Procurement Engine",
+            "desc": "Streamline RFQs, manage vendors, and issue purchase orders to prevent materials-related delays."
+          },
+          "projects": {
+            "title": "Project Management",
+            "desc": "Track 9 project types with integrated BOQ, phases, and real-time budget vs actual tracking."
+          },
+          "invoicing": {
+            "title": "Invoicing",
+            "desc": "Progressive billing with auto-populated work items, VAT, WHT, and retention support."
+          },
+          "purchaseOrders": {
+            "title": "Purchase Orders",
+            "desc": "Complete procurement control with vendor management and full PO lifecycle tracking."
+          },
+          "expenses": {
+            "title": "Expense Tracking",
+            "desc": "Every cost tracked with automatic journal entries linking to projects and work items."
+          }
+        }
+      },
+      "process": {
+        "label": "How It Works",
+        "title": "Three Steps to Total Control",
+        "subtitle": "Get started in minutes with our simple process.",
+        "steps": {
+          "setup": {
+            "title": "Setup",
+            "desc": "Configure your company, create your chart of accounts, and add your team in minutes."
+          },
+          "create": {
+            "title": "Create",
+            "desc": "Add projects with BOQ work items, assign teams, and set budgets with our intuitive interface."
+          },
+          "track": {
+            "title": "Track",
+            "desc": "Invoices, POs, and expenses automatically flow into accounting with real-time reports."
+          }
+        }
+      },
+      "metrics": {
+        "projects": "Active Projects",
+        "invoices": "Invoices Processed",
+        "countries": "Countries"
+      },
+      "testimonials": {
+        "quote1": {
+          "text": "TrakCost turned our chaotic spreadsheets into a streamlined engine. We saved 15% on procurement overhead in the first quarter alone.",
+          "author": "Omar K.",
+          "role": "Project Director, Skyline Builders"
+        },
+        "quote2": {
+          "text": "Finally, an ERP that understands the reality of MENA construction. The RTL support and local tax compliance are game-changers.",
+          "author": "Fatima A.",
+          "role": "CFO, Atlas Development"
+        },
+        "quote3": {
+          "text": "The daily logs link directly to our payroll and invoicing. We used to have 3 people doing what TrakCost automates instantly.",
+          "author": "Ahmed M.",
+          "role": "Operations Manager, BuildCo"
+        }
+      }
+    },
+    "featuresPage": {
+      "hero": {
+        "badge": "Comprehensive Features",
+        "title": "The only tool you need to run your business",
+        "subtitle": "TrakCost replaces your fragmented tools with one seamless platform designed for the Middle East.",
+        "primaryCta": "Start Free Trial"
+      },
+      "items": {
+        "projects": {
+          "title": "Project Management",
+          "description": "Manage 9 project types with integrated BOQ, and real-time Budget vs Actual tracking.",
+          "highlights": {
+            "1": "9 project types support",
+            "2": "Bill of Quantities (BOQ)",
+            "3": "Real-time budget tracking",
+            "4": "Team & task management"
+          }
+        },
+        "accounting": {
+          "title": "Professional Accounting",
+          "badge": "Key Differentiator",
+          "description": "Full Accounting — Not Just Invoicing. Complete Chart of Accounts and auto journal entries built for construction.",
+          "highlights": {
+            "1": "Double-entry bookkeeping",
+            "2": "Automatic journal entries",
+            "3": "Financial statements",
+            "4": "AR/AP aging reports"
+          }
+        },
+        "invoicing": {
+          "title": "Progressive Invoicing",
+          "description": "Progressive Billing, VAT/WHT/Retention support built-in natively for MENA requirements.",
+          "highlights": {
+            "1": "Progressive billing",
+            "2": "Auto-populated work items",
+            "3": "MENA tax compliance",
+            "4": "Payment tracking"
+          }
+        },
+        "procurement": {
+          "title": "Smart Procurement",
+          "description": "Complete Procurement Control, Vendor management, and full PO lifecycle tracking.",
+          "highlights": {
+            "1": "PO lifecycle management",
+            "2": "Vendor management",
+            "3": "Received quantity tracking",
+            "4": "Multi-tax support"
+          }
+        },
+        "expenses": {
+          "title": "Expense Management",
+          "description": "Every Cost Tracked. Easily link expenses directly to Purchase Orders and specific work items.",
+          "highlights": {
+            "1": "Auto journal entries",
+            "2": "Receipt attachments",
+            "3": "Recurring expenses",
+            "4": "PO variance tracking"
+          }
+        }
+      },
+      "comparison": {
+        "title": "How We Compare",
+        "subtitle": "See why TrakCost is the complete construction ERP solution",
+        "headers": {
+          "features": "Features",
+          "trakcost": "TrakCost",
+          "procore": "Procore",
+          "buildertrend": "Buildertrend",
+          "monday": "Monday.com"
+        },
+        "rows": {
+          "boq": {
+            "label": "Project Management (BOQ)",
+            "trakcost": "Full Support",
+            "procore": "Partial",
+            "buildertrend": "No",
+            "monday": "No"
+          },
+          "tax": {
+            "label": "MENA Tax (VAT/WHT)",
+            "trakcost": "Full Support",
+            "procore": "No",
+            "buildertrend": "No",
+            "monday": "No"
+          },
+          "billing": {
+            "label": "Progressive Billing",
+            "trakcost": "Full Support",
+            "procore": "Partial",
+            "buildertrend": "Partial",
+            "monday": "Partial"
+          },
+          "procurement": {
+            "label": "Procurement & POs",
+            "trakcost": "Full Support",
+            "procore": "Standard",
+            "buildertrend": "Standard",
+            "monday": "Limited"
+          },
+          "budgeting": {
+            "label": "Real-time Budgeting",
+            "trakcost": "Full Support",
+            "procore": "Partial",
+            "buildertrend": "Partial",
+            "monday": "Limited"
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to build better projects?",
+        "subtitle": "Join hundreds of firms using TrakCost to eliminate cost overruns and delays.",
+        "primary": "Start Free Trial",
+        "secondary": "View Pricing"
+      }
+    },
+    "pricingPage": {
+      "hero": {
+        "badge": "Transparent Pricing",
+        "title": "Simple, Transparent Pricing",
+        "subtitle": "Choose the perfect plan for your construction firm. Arabic RTL support included on all plans.",
+        "billing": {
+          "monthly": "Monthly",
+          "annual": "Annual",
+          "save": "Save 17% with annual billing"
+        }
+      },
+      "plans": {
+        "free": {
+          "name": "Free",
+          "price": "0",
+          "desc": "For solo contractors and small independent projects.",
+          "cta": "Get Started",
+          "features": {
+            "1": "1 Active Project",
+            "2": "Basic Income & Expense Tracking",
+            "3": "Standard Reporting",
+            "4": "Arabic RTL Support"
+          }
+        },
+        "pro": {
+          "name": "Pro",
+          "badge": "Most Popular",
+          "price": "39",
+          "priceAnnual": "32",
+          "desc": "Complete financial management for growing firms.",
+          "cta": "Start 14-Day Free Trial",
+          "features": {
+            "1": "Unlimited Projects",
+            "2": "Full Accounting Suite",
+            "3": "Tax Compliance Reports (VAT/Zakat)",
+            "4": "Full Arabic RTL Interface",
+            "5": "Priority Support"
+          }
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "Custom",
+          "desc": "Custom solutions for large-scale operations.",
+          "cta": "Contact Sales",
+          "features": {
+            "1": "Everything in Pro",
+            "2": "Full API Access",
+            "3": "Advanced Audit Trails",
+            "4": "Custom ERP Integrations",
+            "5": "Dedicated Account Manager"
+          }
+        }
+      },
+      "comparison": {
+        "title": "Compare Plans",
+        "subtitle": "A detailed breakdown of our plan features",
+        "headers": {
+          "feature": "Feature",
+          "free": "Free",
+          "pro": "Pro",
+          "enterprise": "Enterprise"
+        },
+        "rows": {
+          "projects": { "label": "Active Projects", "free": "1", "pro": "Unlimited", "enterprise": "Unlimited" },
+          "users": { "label": "Included Users", "free": "1", "pro": "Up to 5", "enterprise": "Unlimited" },
+          "accounting": { "label": "Accounting Suite", "free": "Basic", "pro": "Full", "enterprise": "Full" },
+          "tax": { "label": "Tax Compliance", "free": "No", "pro": "Yes", "enterprise": "Yes" },
+          "api": { "label": "API Access", "free": "No", "pro": "No", "enterprise": "Yes" },
+          "support": { "label": "Support", "free": "Community", "pro": "Priority", "enterprise": "24/7 Dedicated" }
+        }
+      },
+      "faqs": {
+        "title": "Frequently Asked Questions",
+        "items": {
+          "1": {
+            "q": "Can I upgrade anytime?",
+            "a": "Yes, you can upgrade your plan at any time. The change will be reflected immediately and you'll be prorated for the remaining billing period."
+          },
+          "2": {
+            "q": "Is there a free trial for Pro?",
+            "a": "Yes! We offer a 14-day free trial for the Pro tier. No credit card required to start your trial."
+          },
+          "3": {
+            "q": "What happens to my data if I downgrade?",
+            "a": "Your data is never deleted. If you downgrade, you'll still have access to all your historical data, but some features may be limited based on your new plan."
+          },
+          "4": {
+            "q": "Do you offer discounts for annual billing?",
+            "a": "Yes! Annual billing gives you a 17% discount compared to monthly billing. That's essentially 2 months free when you pay annually."
+          }
+        }
+      },
+      "cta": {
+        "title": "Start your digital transformation today",
+        "subtitle": "Choose the plan that fits your ambition or talk to our experts for a custom solution.",
+        "primary": "Get Started Now",
+        "secondary": "Contact Sales"
+      }
+    },
+    "contactForm": {
+      "title": "Contact Sales",
+      "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+      "fields": {
+        "fullName": "Full Name",
+        "email": "Business Email",
+        "companyName": "Company Name",
+        "message": "Message"
+      },
+      "submit": "Send Message"
+    },
+    "aboutPage": {
+      "hero": {
+        "badge": "OUR STORY",
+        "title": "Built for the builders the rest of the world forgot.",
+        "subtitle": "Empowering construction firms in Egypt, the Gulf, and beyond with an ERP that speaks their language — both literally and functionally."
+      },
+      "quote": {
+        "text": "\"To build an ERP that speaks their language — both literally and functionally.\"",
+        "desc": "We created the global standard software that actually works for the Middle East and Africa because everyone else assumed what works in California would work in Cairo. It doesn't."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "desc": "We're building the ERP that construction companies in the Arab world have been waiting for. A system that understands progressive billing, VAT retention, withholding tax, and most importantly — speaks Arabic from day one, not as an afterthought."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "desc": "To make professional construction management accessible to every contractor — from Cairo to Riyadh to Dubai. We believe powerful software shouldn't require a Silicon Valley budget or a team of consultants to implement."
+      },
+      "chaos": {
+        "title": "The Chaos of Disconnected Tools",
+        "subtitle": "We saw construction firms struggling with fragmented systems.",
+        "items": {
+          "scattered": {
+            "title": "Scattered Tools",
+            "desc": "Projects in one app, invoices in another, accounting in Excel — data silos everywhere with duplicate entry and errors."
+          },
+          "compliance": {
+            "title": "MENA Compliance Gaps",
+            "desc": "Western tools don't support VAT, withholding tax, retention percentages, or admin fees properly."
+          },
+          "budget": {
+            "title": "Budget Overruns",
+            "desc": "No real-time link between project budgets and actual expenses means projects lose money before anyone notices."
+          },
+          "procurement": {
+            "title": "Fragmented Procurement",
+            "desc": "POs, expenses, and vendor invoices aren't linked, leading to lost receipts and unreconciled payables."
+          }
+        }
+      },
+      "advantage": {
+        "title": "The TrakCost Advantage",
+        "subtitle": "Three pillars that set us apart from the competition.",
+        "items": {
+          "accounting": {
+            "number": "01",
+            "title": "Real Accounting Built In",
+            "desc": "TrakCost is the only construction PM with a full double-entry accounting engine: chart of accounts, journal entries, and financial statements."
+          },
+          "compliance": {
+            "number": "02",
+            "title": "MENA-Native Compliance",
+            "desc": "Built for the Arab world: Arabic RTL interface, VAT, withholding tax, and retention baked into every workflow."
+          },
+          "tracking": {
+            "number": "03",
+            "title": "End-to-End Cost Tracking",
+            "desc": "From the BOQ work item to the journal entry — every cost is traceable across the full procurement and accounting chain."
+          }
+        }
+      },
+      "cta": {
+        "title": "Have questions about TrackCost?",
+        "subtitle": "Our team is here to help you find the perfect solution for your construction firm.",
+        "primary": "Talk to Us",
+        "secondary": "See Features"
+      }
+    },
+    "contactPage": {
+      "title": "Get in Touch",
+      "subtitle": "Have a question? Our team is ready to help.",
+      "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "subject": "Subject",
+        "message": "Message",
+        "submit": "Send Message",
+        "success": "Thank you! Your message has been sent.",
+        "error": "Something went wrong. Please try again.",
+        "placeholders": {
+          "name": "Mohamed Ahmed",
+          "email": "amohad@example.com",
+          "subject": "Project Inquiry",
+          "message": "How can we help you?"
+        }
+      },
+      "info": {
+        "title": "Contact Information",
+        "labels": {
+          "email": "Email",
+          "phone": "Phone",
+          "address": "Office",
+          "hours": "Working Hours"
+        },
+        "email": "sales@trakcost.com",
+        "phone": "+20 100 123 4567",
+        "address": "Smart Village, Cairo-Alex Desert Road, Egypt",
+        "hours": "Sunday - Thursday, 9:00 AM - 6:00 PM (GMT+2)",
+        "cta": {
+          "title": "Interested in a live walkthrough?",
+          "subtitle": "Let's talk about how TrakCost can help you scale your construction business.",
+          "button": "Schedule a Demo"
+        }
+      }
+    },
+    "demoPage": {
+      "title": "Book a Live Demo",
+      "subtitle": "Discover how TrakCost can transform your construction business with a personalized walkthrough.",
+      "heading": "Experience the Real Power of Construction ERP",
+      "features": {
+        "walkthrough": "30-minute walkthrough",
+        "liveDemo": "Live demo of accounting + PM",
+        "billing": "Progressive billing & MENA tax",
+        "qna": "Q&A Session",
+        "recommendations": "Custom recommendations"
+      },
+      "testimonial": {
+        "text": "TrakCost completely transformed how we handle our project accounting. It's built exactly how we operate here.",
+        "author": "Ahmed Youssef",
+        "role": "Managing Director, Horizon Contracting"
+      },
+      "form": {
+        "title": "Schedule Your Walkthrough",
+        "name": "Full Name",
+        "company": "Company Name",
+        "email": "Work Email",
+        "phone": "Phone Number",
+        "submit": "Schedule Demo",
+        "placeholders": {
+          "name": "Full Name",
+          "company": "Company Name",
+          "email": "john@example.com",
+          "phone": "+20 100 123 4567"
+        }
+      }
+    },
+    "privacyPage": {
+      "title": "TrakCost Privacy Policy",
+      "lastUpdated": "Last updated: March 16, 2026",
+      "introduction": "TrakCost (“TrakCost”, “we”, “our”, or “us”) provides a cloud-based construction ERP platform that unifies project management, financial accounting, procurement, and client/vendor management for construction businesses. This Privacy Policy explains how we collect, use, store, and protect personal information when you visit our website or use our services.",
+      "sections": {
+        "introduction": {
+          "title": "1. Introduction",
+          "content": "TrakCost provides a cloud-based construction ERP platform that unifies project management, financial accounting, procurement, and client/vendor management for construction businesses. This Privacy Policy explains how we collect, use, store, and protect personal information when you visit our website or use our services."
+        },
+        "dataCollection": {
+          "title": "2. Data We Collect",
+          "content": "We may collect the following categories of data:\n\n- Account information: name, email address, password (hashed), company name, company size, role, and contact details you provide during sign-up or onboarding.\n- Company and project data: project names and types, work items/BOQ, BOQ categories (Excavation, Concrete, Finishings, etc.), task details, budgets, financial records, invoices, purchase orders, expenses, and related documentation.\n- Client and vendor data: business names, contact information, linked projects, invoices, POs, and expense history.\n- Financial and transactional data: invoice headers and line items, tax details (VAT, withholding tax, retention percentages, admin fees, cost-plus fees), payment records, journal entries, reconciliation data, and financial reports.\n- Usage data: pages visited, feature usage, configuration settings, and time spent within modules such as Projects, Accounting, Invoicing, Purchase Orders, Expenses, and CRM.\n- Technical data: IP address, browser type, device information, and basic log data collected to secure authentication and sessions through our modern infra (Supabase & Next.js).\n\nYou are responsible for ensuring that any personal data of third parties (such as your clients, vendors, or employees) entered into TrakCost has been collected and shared in accordance with applicable laws."
+        },
+        "dataUsage": {
+          "title": "3. How We Use Data",
+          "content": "We use collected data to:\n\n- Provide and operate the TrakCost ERP platform, including project management, invoicing, accounting, procurement, and reporting modules.\n- Configure your environment (company settings, chart of accounts, roles and permissions, localization settings, and lookup values).\n- Maintain security of the platform, including authentication, authorization, and audit logging.\n- Improve product performance and user experience, including analyzing anonymized or aggregated usage patterns.\n- Provide onboarding, training, and customer support.\n- Communicate with you about service updates, feature changes, and marketing content where permitted by law.\n- Comply with legal obligations, including tax, financial, and audit requirements in the jurisdictions where we operate."
+        },
+        "legalBases": {
+          "title": "4. Legal Bases for Processing",
+          "content": "Depending on your location, we process personal data on the following legal bases:\n\n- Performance of a contract: to deliver the services under our agreement with you or your company.\n- Legitimate interests: to secure, maintain, and improve TrakCost and to communicate important service-related information.\n- Consent: for specific marketing or optional product-related communications, where required.\n- Legal obligations: to meet applicable financial, tax, accounting, and regulatory requirements, particularly for MENA-region compliance."
+        },
+        "dataSharing": {
+          "title": "5. Data Sharing and Transfers",
+          "content": "We may share data with:\n\n- Service providers: infrastructure, database, authentication, email delivery, analytics, and support tools that help us operate TrakCost. These providers are bound by confidentiality and data protection obligations.\n- Professional advisors: legal, accounting, or security consultants under appropriate confidentiality terms.\n- Authorities: when required to comply with applicable law, legal process, or enforceable governmental requests.\n\nWe do not sell your personal data. If we engage in any corporate transaction (such as merger, acquisition, or asset sale), your data may be transferred as part of that transaction subject to continued protection."
+        },
+        "internationalTransfers": {
+          "title": "6. International Data Transfers",
+          "content": "TrakCost is built for the MENA region with support for local tax and Arabic/RTL language, but our infrastructure may be hosted in other regions. Where data is transferred across borders, we implement appropriate safeguards in line with applicable law."
+        },
+        "dataRetention": {
+          "title": "7. Data Retention",
+          "content": "We retain personal data for as long as:\n\n- Your account or subscription remains active.\n- Necessary to provide services, support, and reporting.\n- Required by applicable law. For financial, tax, and accounting records, we typically retain data for 10 years as per statutory requirements in many MENA jurisdictions (including Egypt and the Gulf).\n\nUpon termination of service, we may anonymize or aggregate data for analytics, and we will delete or securely archive identifiable data within a commercially reasonable timeframe, subject to legal retention obligations."
+        },
+        "yourRights": {
+          "title": "8. Your Rights",
+          "content": "Subject to local law, you may have the right to:\n\n- Access personal data we hold about you.\n- Correct inaccurate or incomplete data.\n- Request deletion of your personal data, subject to our legal obligations.\n- Object to or restrict certain processing activities.\n- Withdraw consent where processing is based on consent.\n\nRequests can be submitted via our contact channels listed on the website (e.g., Contact or Support pages)."
+        },
+        "cookies": {
+          "title": "9. Cookies and Similar Technologies",
+          "content": "Our website and app may use cookies or similar technologies to:\n\n- Maintain sessions and authentication.\n- Remember language and interface preferences (including Arabic/English selection and RTL/LTR layout).\n- Analyze usage to improve performance.\n\nWhere required, we will present a consent banner allowing you to manage cookie preferences."
+        },
+        "childrenPrivacy": {
+          "title": "10. Children’s Privacy",
+          "content": "TrakCost is a business-focused ERP platform and is not directed to individuals under 18. We do not knowingly collect personal data from children. If you believe a child has provided data, contact us so we can remove it."
+        },
+        "policyChanges": {
+          "title": "11. Changes to This Policy",
+          "content": "We may update this Privacy Policy from time to time. We will indicate the “Last updated” date and, where appropriate, notify you through the platform or by email."
+        },
+        "contact": {
+          "title": "12. Contact",
+          "content": "If you have questions about this Privacy Policy or how your data is handled, please contact us using the details on the Contact or Support page of the TrakCost website."
+        }
+      }
+    },
+    "termsPage": {
+      "title": "TrakCost Terms of Service",
+      "lastUpdated": "Last updated: March 16, 2026",
+      "introduction": "These Terms of Service (“Terms”) govern your access to and use of the TrakCost website, applications, and services (collectively, the “Service”). By creating an account, starting a free trial, or using the Service in any way, you agree to be bound by these Terms. If you are using the Service on behalf of a company or other legal entity, you represent that you have authority to bind that entity, and “you” refers to that entity.",
+      "sections": {
+        "agreement": {
+          "title": "1. Agreement",
+          "content": "These Terms of Service (“Terms”) govern your access to and use of the TrakCost website, applications, and services (collectively, the “Service”). By creating an account, starting a free trial, or using the Service in any way, you agree to be bound by these Terms.\n\nIf you are using the Service on behalf of a company or other legal entity, you represent that you have authority to bind that entity, and “you” refers to that entity."
+        },
+        "service": {
+          "title": "2. Service Description",
+          "content": "TrakCost is a cloud-based, multi-tenant construction ERP platform designed for contractors and construction firms, with modules for project management, invoicing, purchase orders, expense management, double-entry accounting, CRM, and related features. The platform is optimized for the MENA region with built-in VAT, withholding, retention, and Arabic/RTL support.\n\nWe may add, modify, or remove features over time, including releasing new modules such as mobile apps, equipment management, advanced analytics, or integrations as indicated in our roadmap."
+        },
+        "registration": {
+          "title": "3. Account Registration and Access",
+          "content": "- To use TrakCost, you must create an account and provide accurate and complete information.\n- You are responsible for maintaining the confidentiality of your login credentials and for all activities under your account.\n- You must promptly notify us if you suspect any unauthorized access or use of your account.\n- We reserve the right to suspend or terminate accounts that violate these Terms or pose a security risk to the Service or other users."
+        },
+        "payments": {
+          "title": "4. Subscription Plans and Payments",
+          "content": "TrakCost offers multiple tiers, including Free, Pro, and Enterprise, each with defined features, usage limits, and pricing as displayed on the Pricing page. Specific terms for billing cycles, renewal, and cancellation will be shown at checkout and may be updated periodically.\n\n- Free tier: limited usage (for example, user and project caps, basic features) for solo contractors and small teams.\n- Pro tier: expanded features such as full accounting, POs, and reporting for growing construction companies.\n- Enterprise tier: advanced features such as audit trails, API access, and dedicated support for larger firms.\n\nFees are typically billed in advance on a monthly or annual basis. Unless otherwise specified, subscriptions automatically renew at the then-current rates unless cancelled before the end of the current term."
+        },
+        "acceptableUse": {
+          "title": "5. Acceptable Use",
+          "content": "You agree not to:\n\n- Use the Service in violation of any applicable laws, including tax, accounting, or data protection laws in your jurisdiction.\n- Upload or store unlawful, offensive, or infringing content.\n- Attempt to gain unauthorized access to other tenants’ data, the underlying infrastructure, or restricted areas of the Service.\n- Interfere with or disrupt the integrity, performance, or security of the Service.\n- Reverse engineer, decompile, or otherwise attempt to derive source code from the Service, except to the extent such restrictions are prohibited by law.\n\nWe may investigate and take appropriate action (including account suspension or termination) if we suspect misuse."
+        },
+        "ownership": {
+          "title": "6. Customer Data and Ownership",
+          "content": "You retain all rights to the data you and your users upload or generate within TrakCost (“Customer Data”), including projects, work items, financial records, documents, and client/vendor records. We do not claim ownership of Customer Data.\n\nBy using the Service, you grant us a limited, non-exclusive license to process Customer Data solely for the purpose of providing and improving the Service, including security, support, and analytics in aggregated or anonymized form.\n\nYou are solely responsible for:\n\n- The accuracy, quality, and legality of Customer Data.\n- Ensuring you have all necessary rights and consents to store and process Customer Data within TrakCost."
+        },
+        "dataSecurity": {
+          "title": "7. Data Protection and Security",
+          "content": "We implement technical and organizational measures designed to protect Customer Data, including:\n\n- Multi-tenant architecture with strict isolation of company data.\n- Role-based access control, allowing you to assign permissions by role.\n- Authentication and session management with secure identity services and row-level security on database tables.\n- Audit logs capturing key user actions and changes to support compliance.\n\nYour use of the Service is also governed by our Privacy Policy, which describes how we handle personal data."
+        },
+        "availability": {
+          "title": "8. Service Availability and Support",
+          "content": "We aim to keep TrakCost available and performant; however, the Service may occasionally be unavailable due to maintenance, upgrades, or circumstances beyond our control.\n\n- We may provide onboarding guidance, help center resources, and direct support depending on your subscription tier.\n- For Enterprise customers, additional support and service levels may be specified in a separate agreement."
+        },
+        "thirdParty": {
+          "title": "9. Third-Party Services",
+          "content": "TrakCost may rely on or integrate with third-party services (for example, authentication, email, analytics, or future integrations). Use of those services may be subject to separate terms and policies. We are not responsible for third-party services outside our reasonable control."
+        },
+        "intellectualProperty": {
+          "title": "10. Intellectual Property",
+          "content": "All rights, title, and interest in and to the Service (including software, user interface design, trademarks, logos, and documentation) are owned by TrakCost or its licensors. These Terms do not grant you any ownership interest in the Service or its content.\n\nYou may not use our trademarks, branding, or visual identity without prior written permission."
+        },
+        "beta": {
+          "title": "11. Beta and Roadmap Features",
+          "content": "From time to time, we may offer early access to beta or “coming soon” features such as mobile apps, equipment management, or advanced analytics. These features may be offered “as is,” with reduced or different support, and may change or be discontinued at any time."
+        },
+        "portability": {
+          "title": "12. Data Portability",
+          "content": "Upon written request or via available platform export tools, you have the right to export your Customer Data (including audit logs, project financials, and ledgers) in a structured, commonly used format for archival or transition purposes."
+        },
+        "disclaimer": {
+          "title": "13. Disclaimers",
+          "content": "The Service is provided “as is” and “as available.” To the fullest extent permitted by law, we disclaim all warranties, express or implied, including fitness for a particular purpose, non-infringement, or that the Service will be error-free or uninterrupted.\n\nYou are responsible for:\n\n- How you configure and use TrakCost (chart of accounts, tax settings, project data).\n- Compliance of your use of the Service with applicable legal, tax, and accounting requirements.\n- TrakCost is not a professional firm: The Service is a software tool designed to support construction management and accounting. TrakCost does not provide legal, tax, or professional accounting advice. You should consult with qualified professionals for specific advice related to your business."
+        },
+        "liability": {
+          "title": "14. Limitation of Liability",
+          "content": "To the maximum extent permitted by law:\n\n- TrakCost will not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of profits, revenues, data, or goodwill.\n- Our total aggregate liability arising out of or relating to the Service or these Terms will not exceed the amount you paid to use the Service in the 12 months preceding the event giving rise to the claim.\n\nThese limitations apply whether or not we have been advised of the possibility of such damages."
+        },
+        "termination": {
+          "title": "15. Term and Termination",
+          "content": "These Terms apply from your first use of the Service and continue until terminated.\n\nWe may suspend or terminate your access to the Service if:\n\n- You breach these Terms or fail to pay applicable fees.\n- We are required to do so by law.\n- We discontinue the Service in whole or in part.\n\nUpon termination, your right to access and use the Service ceases. We will handle Customer Data in accordance with our Privacy Policy and any applicable data export options available to you."
+        },
+        "changes": {
+          "title": "16. Changes to Terms",
+          "content": "We may revise these Terms from time to time. We will post updates on our website and indicate the “Last updated” date. Continued use of the Service after changes take effect constitutes your acceptance of the revised Terms."
+        },
+        "governingLaw": {
+          "title": "17. Governing Law and Dispute Resolution",
+          "content": "These Terms and any disputes arising out of or relating to them or the Service will be governed by the laws of the jurisdiction specified on our website or order form, without regard to conflict of law provisions. Any disputes shall be resolved in the courts of that jurisdiction, unless otherwise agreed in writing."
+        },
+        "contact": {
+          "title": "18. Contact",
+          "content": "For questions about these Terms, please contact us using the details on the TrakCost Contact or Support page."
+        }
+      }
+    },
+    "securityPage": {
+      "title": "TrakCost Security",
+      "lastUpdated": "Last updated: March 16, 2026",
+      "subtitle": "Enterprise-grade protection for your construction and accounting data.",
+      "sections": {
+        "overview": {
+          "title": "1. Security Overview",
+          "content": "TrakCost is designed as a secure, multi-tenant construction ERP platform that isolates each company’s data while enabling collaboration within teams. Security is built into our architecture, development practices, and operational processes."
+        },
+        "architecture": {
+          "title": "2. Application and Data Architecture",
+          "content": "- Multi-tenant design: each company is logically isolated to prevent cross-tenant access.\n- Row-Level Security (RLS): enforced at the database level to restrict access to records based on tenant and user context.\n- Role-based access control (RBAC): configurable roles and permissions allow you to restrict access by function (for example, project manager, accountant, procurement).\n- Module separation: projects, invoices, POs, expenses, and accounting records are all linked through controlled relationships, ensuring consistent data integrity."
+        },
+        "authentication": {
+          "title": "3. Authentication and Access Control",
+          "content": "- Double-entry accounting integrity: all financial transactions are recorded with linked journal entries through our core accounting engine, ensuring that every debit has a corresponding credit and leaving no \"orphan\" data ghosts.\n- Supabase Identity & Auth: secure email/password authentication via Supabase Auth, with protected routes and session management.\n- Modern Infrastructure: built on Next.js for secure server-side logic and PostgreSQL for robust multi-tenant isolation."
+        },
+        "protection": {
+          "title": "4. Data Protection in Transit and at Rest",
+          "content": "- All connections to the TrakCost application and APIs are protected via HTTPS/TLS to encrypt data in transit.\n- Data at rest is stored in managed PostgreSQL databases with industry-standard encryption.\n- Robust multi-tenant isolation ensures that company_id filters are enforced at the query level.\n- Regular backups are performed to enable recovery in case of data loss or corruption."
+        },
+        "audit": {
+          "title": "5. Audit Trail and Logging",
+          "content": "- TrakCost includes audit logging of key system actions, capturing who did what and when, to support accountability and compliance.\n- Changes to important records (such as financial documents, settings, and user roles) are tracked for review.\n- System and security logs are monitored for suspicious patterns or potential abuse."
+        },
+        "compliance": {
+          "title": "6. Financial and Compliance Controls",
+          "content": "- Double-entry accounting: all financial transactions are recorded with linked journal entries, ensuring accurate financial trails.\n- Accounting periods: open/close controls help maintain data integrity for finalized periods.\n- MENA tax support: VAT, withholding, retention, and admin fees are consistently calculated and recorded across invoices and POs, supporting local compliance."
+        },
+        "operational": {
+          "title": "7. Operational Security",
+          "content": "- Access to production systems is restricted to authorized team members following the principle of least privilege.\n- Configuration and secret management follow secure handling practices.\n- Changes to the platform are tested and reviewed before deployment to minimize risk."
+        },
+        "residency": {
+          "title": "8. Data Residency and Localization",
+          "content": "- TrakCost is built for the MENA region with support for local tax rules, Arabic/RTL UI, and bilingual experiences, which helps organizations align with local requirements.\n- Details about specific hosting regions or data centers can be obtained from us upon request, to assist with your compliance reviews."
+        },
+        "responsibilities": {
+          "title": "9. Customer Responsibilities",
+          "content": "While TrakCost provides a secure platform, you also play a role in protecting your environment:\n\n- Use strong, unique passwords and avoid sharing credentials.\n- Configure roles and permissions carefully, granting only necessary access.\n- Review audit logs and financial reports regularly for unusual activity.\n- Ensure your own devices, networks, and browsers are kept secure and updated."
+        },
+        "reporting": {
+          "title": "10. Reporting Security Issues",
+          "content": "If you discover a potential security vulnerability or suspicious activity, contact us immediately through the channels listed on the TrakCost website. Please provide as much detail as possible so we can investigate and address the issue promptly."
+        }
+      }
+    }
   }
 }

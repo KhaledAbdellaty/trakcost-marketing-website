@@ -1,31 +1,46 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors */
-  --color-primary-900: #0b1c2d;
-  --color-primary-600: #2563eb;
-
-  --color-secondary-600: #64748b;
-  --color-secondary-50: #f8fafc;
-
-  --color-accent-success: #22c55e;
-  --color-accent-warning: #f59e0b;
-
-  /* Fonts - Mapped to Next.js Font Variables */
+  /* Fonts */
   --font-sans: var(--font-sans);
   --font-heading: var(--font-heading);
+
+  /* TrakCost Dark Theme Palette */
+  --color-brand-dark: #ffffff; /* Primary text, inverted background */
+  --color-brand-light: #0f172a; /* Figma base background */
+  --color-brand-gray: #1e293b; /* Secondary dark background (slate-800) */
+  --color-brand-orange: #8b5cf6; /* Accent 2 (violet-500) */
+  --color-brand-blue: #3b82f6; /* Accent 1 (blue-500) */
+  --color-brand-green: #10b981; /* Success metric (emerald-500) */
 }
 
 /* Utilities */
 @layer utilities {
-  .rtl-flip {
+  [dir='rtl'] .rtl-flip {
     transform: scaleX(-1);
+  }
+
+  /* Scroll fade-in animation for sections */
+  .scroll-fade-in {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .scroll-fade-in.in-view {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #0b1c2d; /* Primary 900 as default text */
+  --background: var(--color-brand-light);
+  --foreground: var(--color-brand-dark);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
