@@ -8,6 +8,7 @@ import { MarketingHeader } from '@/components/marketing/layout/MarketingHeader';
 import { MarketingFooter } from '@/components/marketing/layout/MarketingFooter';
 import { Section } from '@/components/ui/design/Section';
 import { Button } from '@/components/ui/design/Button';
+import { submitLead } from '@/lib/actions/contact';
 
 export default function ContactPage() {
   const t = useTranslations('marketing.contactPage');
@@ -19,16 +20,23 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    setError(null);
+
+    const result = await submitLead(formData);
+
     setIsSubmitting(false);
-    setIsSuccess(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setTimeout(() => setIsSuccess(false), 5000);
+    if (result.success) {
+      setIsSuccess(true);
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      setTimeout(() => setIsSuccess(false), 5000);
+    } else {
+      setError(result.error ?? 'Something went wrong. Please try again.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -163,6 +171,15 @@ export default function ContactPage() {
                       className="p-4 bg-green-500/10 border border-green-500/20 text-green-500 rounded-xl text-center"
                     >
                       {t('form.success')}
+                    </motion.div>
+                  )}
+                  {error && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="p-4 bg-red-500/10 border border-red-500/20 text-red-400 rounded-xl text-center"
+                    >
+                      {error}
                     </motion.div>
                   )}
                 </form>

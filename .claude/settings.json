@@ -6,7 +6,10 @@
       "Bash(ls -la .env*)",
       "Bash(node -e \"const {createClient} = require\\(''./node_modules/@supabase/supabase-js''\\); const c = createClient\\(''http://x'',''y''\\); console.log\\(typeof c.schema\\)\")",
       "Bash(node -e \":*)",
-      "Bash(chmod +x /media/portable/ECF0050EF004E126/trakcost-marketing-website/build.sh)"
+      "Bash(chmod +x /media/portable/ECF0050EF004E126/trakcost-marketing-website/build.sh)",
+      "Bash(find /media/portable/ECF0050EF004E126/trakcost-marketing-website -type f \\\\\\(-name *.env* -o -name README* -o -name package.json \\\\\\))",
+      "Bash(grep -r \"handleSubmit\\\\|onSubmit\\\\|FormEvent\" /media/portable/ECF0050EF004E126/trakcost-marketing-website/src/app/[locale]/contact/)",
+      "mcp__supabase__execute_sql"
     ]
   }
 }
