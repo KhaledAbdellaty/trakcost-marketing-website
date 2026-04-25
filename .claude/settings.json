@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /media/portable/ECF0050EF004E126/trakcost-marketing-website/src/app/[locale]/)",
+      "Bash(node -e \"const pkg = require\\(''./node_modules/@supabase/supabase-js/package.json''\\); console.log\\(pkg.version\\)\")",
+      "Bash(ls -la .env*)",
+      "Bash(node -e \"const {createClient} = require\\(''./node_modules/@supabase/supabase-js''\\); const c = createClient\\(''http://x'',''y''\\); console.log\\(typeof c.schema\\)\")",
+      "Bash(node -e \":*)",
+      "Bash(chmod +x /media/portable/ECF0050EF004E126/trakcost-marketing-website/build.sh)"
+    ]
+  }
+}

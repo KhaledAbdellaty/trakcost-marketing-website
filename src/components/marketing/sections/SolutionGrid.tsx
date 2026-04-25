@@ -3,27 +3,32 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/ui/design/Section';
-import { BarChart3, Shield, Zap } from 'lucide-react';
+import { LayoutGrid, Zap, Bell, FileText } from 'lucide-react';
 
 export function SolutionGrid() {
   const t = useTranslations('marketing.home.solution');
 
   const cards = [
     {
-      icon: <BarChart3 className="w-6 h-6 text-blue-500" />,
+      icon: <Zap className="w-6 h-6 text-blue-500" />,
+      title: t('cards.realtime.title'),
+      description: t('cards.realtime.desc'),
+    },
+    {
+      icon: <LayoutGrid className="w-6 h-6 text-blue-500" />,
       title: t('cards.unified.title'),
       description: t('cards.unified.desc'),
     },
     {
-      icon: <Shield className="w-6 h-6 text-blue-500" />,
-      title: t('cards.accounting.title'),
-      description: t('cards.accounting.desc'),
+      icon: <FileText className="w-6 h-6 text-blue-500" />,
+      title: t('cards.reports.title'),
+      description: t('cards.reports.desc'),
     },
     {
-      icon: <Zap className="w-6 h-6 text-blue-500" />,
-      title: t('cards.tax.title'),
-      description: t('cards.tax.desc'),
-    }
+      icon: <Bell className="w-6 h-6 text-blue-500" />,
+      title: t('cards.alerts.title'),
+      description: t('cards.alerts.desc'),
+    },
   ];
 
   return (
@@ -40,7 +45,7 @@ export function SolutionGrid() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {cards.map((card, idx) => (
           <motion.div
             key={idx}
@@ -50,11 +55,11 @@ export function SolutionGrid() {
             <div className="w-14 h-14 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               {card.icon}
             </div>
-            
+
             <h4 className="font-heading font-bold text-xl text-white mb-4">
               {card.title}
             </h4>
-            
+
             <p className="text-slate-400">
               {card.description}
             </p>

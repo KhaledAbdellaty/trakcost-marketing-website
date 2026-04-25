@@ -7,6 +7,7 @@ import { FeaturesHighlight } from '@/components/marketing/sections/FeaturesHighl
 import { ProcessSteps } from '@/components/marketing/sections/ProcessSteps';
 import { MetricsBanner } from '@/components/marketing/sections/MetricsBanner';
 import { CtaSection } from '@/components/marketing/sections/CtaSection';
+import { ChaosSection } from '@/components/marketing/sections/ChaosSection';
 import { useTranslations } from 'next-intl';
 
 export default function HomePage() {
@@ -16,12 +17,13 @@ export default function HomePage() {
       <MarketingHeader />
       <div className="flex flex-col min-h-screen">
         <HeroSection />
-        <TrustBanner />
+        <ChaosSection namespace="marketing.home" />
+        {/* <TrustBanner /> */}
         <SolutionGrid />
         <FeaturesHighlight />
         <ProcessSteps />
-        <MetricsBanner />
-        <CtaSection  title={t('cta.title')}
+        {/* <MetricsBanner /> */}
+        <CtaSection title={t('cta.title')}
           subtitle={t('cta.subtitle')}
           primaryButton={{
             label: t('cta.primary'),

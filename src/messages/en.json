@@ -1,39 +1,37 @@
 {
-
   "HomePage": {
     "title": "Modern ERP for Construction & Finance",
     "subtitle": "Track costs, manage projects, and streamline operations with the leading cloud-native ERP in MENA.",
     "getStarted": "Start Free Trial",
     "contactSales": "Contact Sales"
-
   },
   "Metadata": {
     "home": {
-      "title": "TrackCost | Modern ERP for Construction",
+      "title": "TrakCost | Modern ERP for Construction",
       "pid": "The #1 cloud ERP for construction companies in MENA. Track costs, manage projects, and streamline operations."
     },
     "features": {
-      "title": "Features - TrackCost",
+      "title": "Features - TrakCost",
       "desc": "Explore our comprehensive suite of modules: Finance, Operations, Procurement, and HR."
     },
     "solutions": {
-      "title": "Solutions - TrackCost",
+      "title": "Solutions - TrakCost",
       "desc": "Tailored solutions for General Contractors, Real Estate Developers, and Subcontractors."
     },
     "pricing": {
-      "title": "Pricing Plans - TrackCost",
+      "title": "Pricing Plans - TrakCost",
       "desc": "Transparent pricing for construction teams of all sizes. Start your free trial today."
     },
     "about": {
-      "title": "About Us - TrackCost",
-      "desc": "We are building the operating system for the construction industry. Meet the team behind TrackCost."
+      "title": "About Us - TrakCost",
+      "desc": "We are building the operating system for the construction industry. Meet the team behind TrakCost."
     },
     "blog": {
-      "title": "Blog & Insights - TrackCost",
+      "title": "Blog & Insights - TrakCost",
       "desc": "Expert advice, industry trends, and product updates for construction professionals."
     },
     "contact": {
-      "title": "Contact Sales - TrackCost",
+      "title": "Contact Sales - TrakCost",
       "desc": "Get in touch with our team to schedule a demo or discuss your enterprise needs."
     }
   },
@@ -48,7 +46,7 @@
     "demo": "Request Demo"
   },
   "Common": {
-    "copyright": "© 2026 TrackCost. All rights reserved."
+    "copyright": "© 2026 TrakCost. All rights reserved."
   },
   "Footer": {
     "company": "Company",
@@ -78,7 +76,7 @@
   "ProblemSolution": {
     "label": " The Problem",
     "title": "Stop Managing Projects with Spreadsheets",
-    "description": "Fragmented data leads to cost overruns and delays. TrackCost unifies your entire operation in one cloud platform.",
+    "description": "Fragmented data leads to cost overruns and delays. TrakCost unifies your entire operation in one cloud platform.",
     "problemTitle": "The Old Way",
     "problemList": {
       "1": "Disconnected Excel sheets",
@@ -86,7 +84,7 @@
       "3": "Delayed material procurement",
       "4": "Manual approval chaos"
     },
-    "solutionTitle": "The TrackCost Way",
+    "solutionTitle": "The TrakCost Way",
     "solutionList": {
       "1": "Real-time unified dashboard",
       "2": "Automated budget tracking",
@@ -159,7 +157,7 @@
   },
   "FeaturesPage": {
     "title": "Everything You Need to Run Your Construction Business",
-    "subtitle": "From the field to the back office, TrackCost keeps everyone in sync.",
+    "subtitle": "From the field to the back office, TrakCost keeps everyone in sync.",
     "finance": {
       "title": "Smart Finance",
       "desc": "Real-time cost tracking, automated invoicing, and integration with your bank."
@@ -227,10 +225,9 @@
     "cta": "Choose Plan",
     "contact": "Contact Sales"
   },
-
   "SolutionsPage": {
     "title": "Solutions for Every Construction Stakeholder",
-    "subtitle": "Whether you are a general contractor, developer, or subcontractor, TrackCost adapts to your workflow.",
+    "subtitle": "Whether you are a general contractor, developer, or subcontractor, TrakCost adapts to your workflow.",
     "contractors": {
       "title": "General Contractors",
       "desc": "Control costs across multiple sites, manage subcontractors, and ensure projects stay on budget."
@@ -295,10 +292,10 @@
         "badge": "Built for MENA Construction",
         "title": {
           "line1": "Construction management",
-          "line2": "meets real accounting."
+          "line2": "meets real accounting"
         },
-        "subtitle": "The premium cloud-based construction ERP that combines project management with professional double-entry accounting. Purpose-built for the MENA region.",
-        "primaryCta": "Start Your Free Trial",
+        "subtitle": "An intelligent system specifically designed for contracting companies in Egypt and the Middle East.",
+        "primaryCta": "Start Free Now",
         "secondaryCta": "Contact Sales",
         "trust": {
           "walkthrough": "30-minute walkthrough",
@@ -312,25 +309,51 @@
         "primary": "Start Free Trial",
         "secondary": "Contact Sales"
       },
+      "chaos": {
+        "title": "The Chaos of Disconnected Tools",
+        "subtitle": "We saw construction firms struggling with fragmented systems.",
+        "items": {
+          "scattered": {
+            "title": "Scattered Tools",
+            "desc": "Projects in one app, invoices in another, accounting in Excel — data silos everywhere with duplicate entry and errors."
+          },
+          "compliance": {
+            "title": "MENA Compliance Gaps",
+            "desc": "Western tools don't support VAT, withholding tax, retention percentages, or admin fees properly."
+          },
+          "budget": {
+            "title": "Budget Overruns",
+            "desc": "No real-time link between project budgets and actual expenses means projects lose money before anyone notices."
+          },
+          "procurement": {
+            "title": "Fragmented Procurement",
+            "desc": "POs, expenses, and vendor invoices aren't linked, leading to lost receipts and unreconciled payables."
+          }
+        }
+      },
       "trustBanner": {
         "label": "Trusted by leading contractors across MENA"
       },
       "solution": {
         "label": "The Complete Solution",
         "title": "The TrakCost Way",
-        "description": "A centralized source of truth. Real-time dashboards, automated budget tracking, and instant digital approvals.",
+        "description": "Complete control over your project costs in real time",
         "cards": {
           "unified": {
-            "title": "One Platform",
-            "desc": "Single unified system covering all construction and accounting needs, no fragmented tools."
+            "title": "Manage all projects in one place",
+            "desc": "A comprehensive view of all your projects"
           },
-          "accounting": {
-            "title": "Double-entry Accounting",
-            "desc": "Full chart of accounts and auto journal entries that most construction PM tools miss."
+          "realtime": {
+            "title": "Track costs in real time",
+            "desc": "Instant updates for all expenses"
           },
-          "tax": {
-            "title": "MENA Tax Compliance",
-            "desc": "Built-in VAT, WHT, retention, and Arabic RTL support designed for the Middle East."
+          "alerts": {
+            "title": "Alerts when budget is exceeded",
+            "desc": "Know immediately when any overrun occurs"
+          },
+          "reports": {
+            "title": "Smart and easy reports",
+            "desc": "Clear insights to help you make decisions"
           }
         }
       },
@@ -339,6 +362,7 @@
         "title": "Everything You Need to Build Better",
         "subtitle": "Everything you need to run your construction business efficiently.",
         "viewAll": "View all features",
+        "primaryCta": "Start Now",
         "items": {
           "finance": {
             "title": "Smart Finance",
@@ -374,6 +398,7 @@
         "label": "How It Works",
         "title": "Three Steps to Total Control",
         "subtitle": "Get started in minutes with our simple process.",
+        "primaryCta": "Start Now",
         "steps": {
           "setup": {
             "title": "Setup",
@@ -539,6 +564,20 @@
         }
       },
       "plans": {
+        "popular": "Most Popular",
+        "freeLabel": "Free",
+        "cta": "Get Started",
+        "loadError": "Failed to load plans. Please try again.",
+        "limits": {
+          "projects_one": "1 project",
+          "projects_many": "{count} projects",
+          "projects_unlimited": "Unlimited projects",
+          "users_one": "1 user",
+          "users_many": "{count} users",
+          "users_unlimited": "Unlimited users",
+          "storage": "{gb} GB storage",
+          "storage_unlimited": "Unlimited storage"
+        },
         "free": {
           "name": "Free",
           "price": "0",
@@ -590,12 +629,42 @@
           "enterprise": "Enterprise"
         },
         "rows": {
-          "projects": { "label": "Active Projects", "free": "1", "pro": "Unlimited", "enterprise": "Unlimited" },
-          "users": { "label": "Included Users", "free": "1", "pro": "Up to 5", "enterprise": "Unlimited" },
-          "accounting": { "label": "Accounting Suite", "free": "Basic", "pro": "Full", "enterprise": "Full" },
-          "tax": { "label": "Tax Compliance", "free": "No", "pro": "Yes", "enterprise": "Yes" },
-          "api": { "label": "API Access", "free": "No", "pro": "No", "enterprise": "Yes" },
-          "support": { "label": "Support", "free": "Community", "pro": "Priority", "enterprise": "24/7 Dedicated" }
+          "projects": {
+            "label": "Active Projects",
+            "free": "1",
+            "pro": "Unlimited",
+            "enterprise": "Unlimited"
+          },
+          "users": {
+            "label": "Included Users",
+            "free": "1",
+            "pro": "Up to 5",
+            "enterprise": "Unlimited"
+          },
+          "accounting": {
+            "label": "Accounting Suite",
+            "free": "Basic",
+            "pro": "Full",
+            "enterprise": "Full"
+          },
+          "tax": {
+            "label": "Tax Compliance",
+            "free": "No",
+            "pro": "Yes",
+            "enterprise": "Yes"
+          },
+          "api": {
+            "label": "API Access",
+            "free": "No",
+            "pro": "No",
+            "enterprise": "Yes"
+          },
+          "support": {
+            "label": "Support",
+            "free": "Community",
+            "pro": "Priority",
+            "enterprise": "24/7 Dedicated"
+          }
         }
       },
       "faqs": {
@@ -645,7 +714,7 @@
       },
       "quote": {
         "text": "\"To build an ERP that speaks their language — both literally and functionally.\"",
-        "desc": "We created the global standard software that actually works for the Middle East and Africa because everyone else assumed what works in California would work in Cairo. It doesn't."
+        "desc": "TRAKCOST was created from the heart of an Egyptian contracting company to include everything we need for projects and accounting, something not available in any other program."
       },
       "mission": {
         "title": "Our Mission",
@@ -699,7 +768,7 @@
         }
       },
       "cta": {
-        "title": "Have questions about TrackCost?",
+        "title": "Have questions about TrakCost?",
         "subtitle": "Our team is here to help you find the perfect solution for your construction firm.",
         "primary": "Talk to Us",
         "secondary": "See Features"

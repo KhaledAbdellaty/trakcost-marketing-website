@@ -6,10 +6,11 @@ import { useTranslations } from 'next-intl';
 import { MarketingHeader } from '@/components/marketing/layout/MarketingHeader';
 import { MarketingFooter } from '@/components/marketing/layout/MarketingFooter';
 import { Section } from '@/components/ui/design/Section';
-import { Typography } from '@/components/ui/design/Typography';
 import { Button } from '@/components/ui/design/Button';
-import { Zap, CheckCircle2, Minus, Plus, HelpCircle } from 'lucide-react';
+import { Zap, CheckCircle2, Minus, HelpCircle } from 'lucide-react';
 import { CtaSection } from '@/components/marketing/sections/CtaSection';
+import { useGetPlansQuery } from '@/features/plans/plansApi';
+import { useLocale } from 'next-intl';
 
 const container = {
   hidden: { opacity: 0 },
@@ -29,11 +30,9 @@ const item = {
 export default function PricingPage() {
   const t = useTranslations('marketing.pricingPage');
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'annual'>('annual');
-
-  const planKeys = ['free', 'pro', 'enterprise'] as const;
-  const rowKeys = ['projects', 'users', 'accounting', 'tax', 'api', 'support'] as const;
+  const { data: plans, isLoading: plansLoading, isError: plansError } = useGetPlansQuery();
   const faqKeys = ['1', '2', '3', '4'] as const;
-
+  const locale = useLocale();
   return (
     <>
       <MarketingHeader />
@@ -41,7 +40,7 @@ export default function PricingPage() {
         {/* Hero Section */}
         <Section background="dark" size="lg" className="relative overflow-hidden pt-16 pb-16 md:pt-16 md:pb-24">
           <div className="absolute top-0 start-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
-          
+
           <div className="max-w-4xl mx-auto text-center relative z-10 px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -63,40 +62,38 @@ export default function PricingPage() {
                 <div className="inline-flex items-center p-1 bg-[#161b27] border border-slate-800 rounded-2xl">
                   <button
                     onClick={() => setBillingCycle('monthly')}
-                    className={`px-8 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${
-                      billingCycle === 'monthly'
-                        ? 'bg-blue-600 text-white shadow-xl shadow-blue-600/20'
-                        : 'text-slate-400 hover:text-white hover:bg-slate-800/50'
-                    }`}
+                    className={`px-8 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${billingCycle === 'monthly'
+                      ? 'bg-blue-600 text-white shadow-xl shadow-blue-600/20'
+                      : 'text-slate-400 hover:text-white hover:bg-slate-800/50'
+                      }`}
                   >
                     {t('hero.billing.monthly')}
                   </button>
                   <button
                     onClick={() => setBillingCycle('annual')}
-                    className={`px-8 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${
-                      billingCycle === 'annual'
-                        ? 'bg-blue-600 text-white shadow-xl shadow-blue-600/20'
-                        : 'text-slate-400 hover:text-white hover:bg-slate-800/50'
-                    }`}
+                    className={`px-8 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${billingCycle === 'annual'
+                      ? 'bg-blue-600 text-white shadow-xl shadow-blue-600/20'
+                      : 'text-slate-400 hover:text-white hover:bg-slate-800/50'
+                      }`}
                   >
                     {t('hero.billing.annual')}
                   </button>
                 </div>
-                
+
                 <AnimatePresence mode="wait">
-                  {billingCycle === 'annual' && (
-                    <motion.div
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full"
-                    >
-                      <Zap className="w-4 h-4 text-emerald-400" />
-                      <span className="text-sm font-bold text-emerald-400 uppercase tracking-tight">
-                        {t('hero.billing.save')}
-                      </span>
-                    </motion.div>
-                  )}
+
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full"
+                  >
+                    <Zap className="w-4 h-4 text-emerald-400" />
+                    <span className="text-sm font-bold text-emerald-400 uppercase tracking-tight">
+                      {t('hero.billing.save')}
+                    </span>
+                  </motion.div>
+
                 </AnimatePresence>
               </div>
             </motion.div>
@@ -105,92 +102,135 @@ export default function PricingPage() {
 
         {/* Pricing Cards */}
         <Section background="dark" size="default" className="pb-16 py-16 md:py-16">
-          <motion.div 
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-6"
-          >
-            {planKeys.map((key) => {
-              const highlighted = key === 'pro';
-              const price = key === 'pro' && billingCycle === 'annual' 
-                ? t('plans.pro.priceAnnual') 
-                : t(`plans.${key}.price`);
-              const features = t.raw(`plans.${key}.features`);
-              const badge = t.has(`plans.${key}.badge`) ? t(`plans.${key}.badge`) : null;
+          {plansLoading && (
+            <div className="flex justify-center items-center py-24">
+              <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+            </div>
+          )}
+          {plansError && (
+            <p className="text-center text-slate-400 py-24">{t('plans.loadError')}</p>
+          )}
+          {plans && (
+            <motion.div
+              variants={container}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-6"
+            >
+              {plans.map((plan) => {
+                const price = billingCycle === 'annual' ? plan.price_yearly : plan.price_monthly;
+                const isFree = price === 0;
+                const highlighted = plan.plan_code === 'pro';
 
-              return (
-                <motion.div
-                  key={key}
-                  variants={item}
-                  whileHover={{ y: -8 }}
-                  className={`relative flex flex-col rounded-3xl p-8 transition-all duration-500 overflow-hidden ${
-                    highlighted
+                return (
+                  <motion.div
+                    key={plan.id}
+                    variants={item}
+                    whileHover={{ y: -8 }}
+                    className={`relative flex flex-col rounded-3xl p-8 transition-all duration-500 overflow-hidden ${highlighted
                       ? 'bg-[#1e293b] border-2 border-blue-500 shadow-2xl shadow-blue-600/10'
                       : 'bg-[#161b27] border border-slate-800 hover:border-blue-600/50'
-                  }`}
-                >
-                  {highlighted && (
-                    <div className="absolute top-0 right-0 p-4">
-                      <div className="bg-blue-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
-                        {badge}
-                      </div>
-                    </div>
-                  )}
-
-                  <div className="mb-8">
-                    <h3 className="font-heading font-bold text-2xl text-white mb-2">
-                      {t(`plans.${key}.name`)}
-                    </h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">
-                      {t(`plans.${key}.desc`)}
-                    </p>
-                  </div>
-
-                  <div className="mb-8 flex items-baseline gap-1">
-                    {key !== 'enterprise' ? (
-                      <>
-                        <span className="text-5xl font-black text-white">${price}</span>
-                        <span className="text-slate-500 font-bold text-sm">/user/mo</span>
-                      </>
-                    ) : (
-                      <span className="text-4xl font-black text-white">{price}</span>
-                    )}
-                  </div>
-
-                  <ul className="space-y-4 mb-10 flex-grow">
-                    {Object.values(features).map((feature: any) => (
-                      <li key={feature} className="flex items-start gap-3 group">
-                        <CheckCircle2 className={`w-5 h-5 mt-0.5 flex-shrink-0 transition-colors ${highlighted ? 'text-blue-400' : 'text-emerald-500/80'}`} />
-                        <span className="text-sm text-slate-300 leading-tight group-hover:text-white transition-colors">
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <Button
-                    variant={highlighted ? 'primary' : 'outline'}
-                    size="lg"
-                    className={`w-full font-bold tracking-tight rounded-2xl py-6 ${
-                      highlighted 
-                        ? 'bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-600/20 border-none' 
-                        : 'border-slate-800 text-white hover:border-blue-600 transition-all'
-                    }`}
+                      }`}
                   >
-                    {t(`plans.${key}.cta`)}
-                  </Button>
-                </motion.div>
-              );
-            })}
-          </motion.div>
+                    {highlighted && (
+                      <div className="absolute top-0 ltr:right-0 rtl:left-0 p-4">
+                        <div className="bg-blue-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
+                          {t('plans.popular')}
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="mb-8">
+                      <h3 className="font-heading font-bold text-3xl text-white mb-2">
+                        {plan.name}
+                      </h3>
+                      <p className="text-slate-400 text-sm leading-relaxed">
+                        {plan.description}
+                      </p>
+                    </div>
+
+                    <div className="mb-8 flex flex-col gap-1">
+                      {isFree ? (
+                        <span className="text-5xl font-black text-white">{t('plans.freeLabel')}</span>
+                      ) : (
+                        <>
+                          {billingCycle === 'annual' && (
+                            <span className="text-slate-500 font-bold text-sm line-through">
+                              EGP {plan.price_monthly * 12}
+                            </span>
+                          )}
+                          <div className="flex items-baseline gap-1">
+                            <span className="text-5xl font-black text-white">EGP {price}</span>
+                          </div>
+                        </>
+                      )}
+                    </div>
+
+                    {plan.resource_limits && (
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {plan.resource_limits.max_users != null && (
+                          <span className="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
+                            {plan.resource_limits.max_users === -1
+                              ? t('plans.limits.users_unlimited')
+                              : plan.resource_limits.max_users === 1
+                                ? t('plans.limits.users_one')
+                                : t('plans.limits.users_many', { count: plan.resource_limits.max_users })}
+                          </span>
+                        )}
+                        {plan.resource_limits.max_projects != null && (
+                          <span className="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
+                            {plan.resource_limits.max_projects === -1
+                              ? t('plans.limits.projects_unlimited')
+                              : plan.resource_limits.max_projects === 1
+                                ? t('plans.limits.projects_one')
+                                : t('plans.limits.projects_many', { count: plan.resource_limits.max_projects })}
+                          </span>
+                        )}
+                        {plan.resource_limits.storage_gb != null && (
+                          <span className="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
+                            {plan.resource_limits.storage_gb === -1
+                              ? t('plans.limits.storage_unlimited')
+                              : t('plans.limits.storage', { gb: plan.resource_limits.storage_gb })}
+                          </span>
+                        )}
+                      </div>
+                    )}
+
+                    <ul className="space-y-4 mb-10 flex-grow">
+                      {(plan.feature_flags ?? []).map((feature) => (
+                        <li key={feature} className="flex items-start gap-3 group">
+                          <CheckCircle2 className={`w-5 h-5 mt-0.5 flex-shrink-0 transition-colors ${highlighted ? 'text-blue-400' : 'text-emerald-500/80'}`} />
+                          <span className="text-sm text-slate-300 leading-tight group-hover:text-white transition-colors">
+                            {feature}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                    <a href={`https://app.trakcost.com/${locale}/auth/register`} className="w-full sm:w-auto">
+                      <Button
+                        variant={highlighted ? 'primary' : 'outline'}
+                        size="lg"
+                        className={`w-full font-bold tracking-tight rounded-2xl py-6 ${highlighted
+                          ? 'bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-600/20 border-none'
+                          : 'border-slate-800 text-white hover:border-blue-600 transition-all'
+                          }`}
+                      >
+
+                        {t('plans.cta')}
+                      </Button>
+                    </a>
+                  </motion.div>
+                );
+              })}
+            </motion.div>
+          )}
         </Section>
 
         {/* Comparison Table */}
-        <Section background="dark" size="default" className="pb-24 py-24 md:py-24">
+        {/* <Section background="dark" size="default" className="pb-24 py-24 md:py-24">
           <div className="max-w-6xl mx-auto px-6">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -204,7 +244,7 @@ export default function PricingPage() {
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -250,7 +290,7 @@ export default function PricingPage() {
                         )}
                       </td>
                       <td className="p-8 text-center bg-slate-800/20">
-                         {t(`comparison.rows.${rowKey}.enterprise`) === 'Yes' ? (
+                        {t(`comparison.rows.${rowKey}.enterprise`) === 'Yes' ? (
                           <CheckCircle2 className="w-5 h-5 text-emerald-500 mx-auto" />
                         ) : (
                           <span className="text-sm font-bold text-slate-200">{t(`comparison.rows.${rowKey}.enterprise`)}</span>
@@ -262,15 +302,15 @@ export default function PricingPage() {
               </table>
             </motion.div>
           </div>
-        </Section>
+        </Section> */}
 
         {/* FAQ Section */}
         <Section background="dark" size="default" className="pb-24 py-24 md:py-24 relative overflow-hidden">
           {/* Subtle background glow */}
           <div className="absolute bottom-0 end-0 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-[100px] pointer-events-none" />
-          
+
           <div className="max-w-4xl mx-auto px-6 relative z-10">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -284,7 +324,7 @@ export default function PricingPage() {
               </h2>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               variants={container}
               initial="hidden"
               whileInView="show"
@@ -292,7 +332,7 @@ export default function PricingPage() {
               className="grid gap-6"
             >
               {faqKeys.map((key) => (
-                <motion.div 
+                <motion.div
                   key={key}
                   variants={item}
                   className="bg-[#161b27] border border-slate-800 rounded-3xl p-8 hover:border-blue-600/30 transition-all group"
@@ -311,7 +351,7 @@ export default function PricingPage() {
         </Section>
 
         {/* Global CTA Section */}
-        <CtaSection 
+        <CtaSection
           title={t('cta.title')}
           subtitle={t('cta.subtitle')}
           primaryButton={{

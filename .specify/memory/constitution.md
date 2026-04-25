@@ -23,7 +23,7 @@ Sync Impact Report:
 - Follow-up TODOs: None
 -->
 
-# TrackCost Landing Constitution
+# TrakCost Landing Constitution
 
 ## Core Principles
 

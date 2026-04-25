@@ -64,7 +64,7 @@ export function HeroSection() {
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
+        {/* <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
           {[
             t('trust.walkthrough'),
             t('trust.noCard'),
@@ -77,7 +77,7 @@ export function HeroSection() {
               </span>
             </div>
           ))}
-        </div>
+        </div> */}
       </motion.div>
     </Section>
   );

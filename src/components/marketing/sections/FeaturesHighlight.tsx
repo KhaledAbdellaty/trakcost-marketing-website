@@ -5,9 +5,12 @@ import { motion } from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import { Section } from '@/components/ui/design/Section';
 import { ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/design/Button';
+import { useLocale } from 'next-intl';
 
 export function FeaturesHighlight() {
   const t = useTranslations('marketing.home.features');
+  const locale = useLocale();
 
   const features = [
     {
@@ -62,12 +65,19 @@ export function FeaturesHighlight() {
         ))}
       </div>
 
-      <div className="text-center mt-12 md:mt-16">
+      <div className="flex flex-row items-center gap-4 mt-12 md:mt-16 justify-center">
+        <a href={`https://app.trakcost.com/${locale}/auth/register`} className="w-full sm:w-auto">
+          <Button size="lg" variant="primary" fullWidth className="group gap-2">
+            {t('primaryCta')}
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform rtl:scale-x-[-1]" />
+          </Button>
+        </a>
         <Link href="/features" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-bold tracking-wide transition-colors group">
           {t('viewAll')}
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:scale-x-[-1] transition-transform" />
         </Link>
       </div>
+
     </Section>
   );
 }

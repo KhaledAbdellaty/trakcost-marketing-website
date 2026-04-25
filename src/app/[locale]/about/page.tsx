@@ -14,13 +14,13 @@ export default function AboutPage() {
     <>
       <MarketingHeader />
       <div className="flex flex-col min-h-screen">
-        
+
         {/* Hero Section */}
         <Section background="dark" size="sm" className="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24 py-24 md:py-24">
           {/* Decorative gradient blur */}
           <div className="absolute top-0 start-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -100,7 +100,7 @@ export default function AboutPage() {
 
         {/* The Chaos Section */}
         <Section background="dark" size="sm" className="py-16 md:py-24 bg-[#0f172a]/50">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -138,7 +138,7 @@ export default function AboutPage() {
 
         {/* The TrakCost Advantage */}
         <Section background="dark" size="sm" className="py-16 md:py-24">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -187,7 +187,7 @@ export default function AboutPage() {
         </Section>
 
         {/* Global CTA Section */}
-        <CtaSection 
+        <CtaSection
           title={t('cta.title')}
           subtitle={t('cta.subtitle')}
           primaryButton={{

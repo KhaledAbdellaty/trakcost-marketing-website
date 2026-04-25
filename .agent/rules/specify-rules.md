@@ -1,4 +1,8 @@
-# TrackCost-Landing Development Guidelines
+---
+trigger: always_on
+---
+
+# TrakCost-Landing Development Guidelines
 
 Auto-generated from all feature plans. Last updated: 2026-03-09
 
